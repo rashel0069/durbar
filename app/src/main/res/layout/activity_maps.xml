@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:backgroundTintMode="screen"
+        android:src="@drawable/du2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/topfragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/picture1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic1" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/picture1"
+                android:id="@+id/l1"
+                android:layout_marginEnd="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_shape"
+                    android:hint="Where From"
+                    android:backgroundTintMode="screen"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Where To"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTintMode="screen"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@+id/l1"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Confirm" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/carimg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/ic_directions_car_black_24dp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Car"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/image2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/ic_motorcycle_black_24dp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Moto"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/image3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/ic_directions_bus_black_24dp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Bus"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

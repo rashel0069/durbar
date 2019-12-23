@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_directions_car_black_24dp" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Car Affordable MotorCar rides"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:text="BDT\n156.00"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_motorcycle_black_24dp" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Moto Affordable Motorcycle rides"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:text="BDT\n69.00"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_button"
+                android:src="@drawable/ic_directions_bus_black_24dp" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Bus Affordable \nAC Bus rides"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="BDT\n29.00"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="PROCEED PAYMENT"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</LinearLayout>
